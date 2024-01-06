@@ -44,8 +44,8 @@ header {
     justify-content: space-between;
 }
 .logo {
-    width: 100%;
     position: absolute;
+    left: 44%;
     top: 0;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ header {
 
 @media (min-width:1250px) {
     .logo {
-        left: 20px;
+        margin-left: 50px;
     }
 }
 
@@ -69,7 +69,7 @@ header {
 }
 
 .toggle_btn {
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     display: none;
 }
@@ -101,7 +101,6 @@ header {
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
-    border: 1px solid #004f45;
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -147,10 +146,63 @@ header {
     }
 }
 
+.hidden {
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: 2s ;
+}
+
+.show {
+    visibility: initial;
+    transform: translateX(0);
+    transition: 2s ;
+}
+
+.hidden2 {
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 2s ;
+    
+}
+
+.show2 {
+    visibility: initial;
+    transform: translateX(0);
+    transition: 2s ;
+}
+
+.hidden3 {
+    visibility: initial;
+    transform: translateY(-100%);
+    transition: 2s ;
+    
+}
+
+.show3 {
+    visibility: initial;
+    transform: translateY(0);
+    transition: 2s ;
+}
+
+
+.hidden4 {
+    visibility: initial;
+    transform: translateY(0);
+    transition: 2s ;
+    
+}
+
+.show4 {
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 2s ;
+}
+
+
 /* MAIN */
 
 .title {
-    height: 200px;
+    height: 250px;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -159,20 +211,29 @@ header {
 }
 
 .logo2 img{
-    width: 90px;
+    width: 100px;
     display: none;
 
 }
-.title h1 {
-    font-family: var(--title-font-family);
+
+.titlename {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.title p {
-    color: orange;
+.titlename h1 {
+    font-family: var(--title-font-family);
+    font-size: 90px;
+}
+
+.titlename p {
+    color: #2c555f;
     font-weight: 700;
 }
 
-@media (max-width:500px) {
+@media (max-width:510px) {
     .logo {
         display: none;
     }
@@ -180,22 +241,23 @@ header {
     .logo2 img {
         display: block;
     }
+
     .title {
         align-items: center;
     }
 
     .title h1 {
-        font-size: 30px;
-        margin-left: 15px;
+        font-size: 60px;
+        margin-left: 10px;
     }
 
     .title p {
-        font-size: 20px;
-        margin-left: 18px;
+        font-size: 25px;
+        margin-left: 15px;   
     }
 
     .titlename {
-        margin-bottom: 16px;
+        align-items: normal;
     }
 
 }
@@ -245,4 +307,95 @@ header {
     75% {margin-left: -300%;}
     95% {margin-left: -300%;}
     100% {margin-left: -400%;}
+}
+
+.vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision h1 {
+    color: white;
+    font-family: var(--title-font-family);
+    border-bottom: 4px solid orange;
+    margin: 30px 0;
+}
+
+.vision h3 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.vision p {
+    width: 70%;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#visiontopic1 {
+    background: #fff;
+    margin: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#visiontopic1 p {
+    color: #2c555f;
+    padding: 40px 0;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#visiontopic2 {
+    background: orange;
+    margin: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#visiontopic2 p {
+    color: #fff;
+    padding: 40px 0;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.mission h1 {
+    color: white;
+    font-family: var(--title-font-family);
+    border-bottom: 4px solid orange;
+    margin: 30px 0;
+}
+
+.mission h3 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.missiontopic {
+    width: 100%;
+    height: 300px;
+    background: #fff;
+}
+
+.missiontopic video {
+    padding: 20px;
+    width: 200px;
+    border-radius: 50px ;
 }
