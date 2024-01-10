@@ -443,6 +443,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 .values h1 {
     color: white;
     font-family: var(--title-font-family);
