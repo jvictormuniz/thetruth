@@ -407,13 +407,10 @@ header {
     display: flex;
 }
 
-.missiontopic video {
-    width: 100%;
-}
-
 .topics {
     width: 100%;
-    position: absolute;
+    background: url(./assets/Nicolas.jpeg) center/cover;
+    background-attachment: fixed;
     color: white;
     font-size: 23px;
 }
