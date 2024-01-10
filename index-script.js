@@ -56,3 +56,11 @@ const myObserver4 = new IntersectionObserver((entries) => {
  const elements4 = document.querySelectorAll('.hidden4')
  
  elements4.forEach( (element) => myObserver4.observe(element))
+
+
+ let typed = new Typed( '.js-words', {
+    strings: ['ALEGRES', 'UNIDOS', 'CONVICTOS', 'SINCEROS', 'COMPASSIVOS', 'INTEGROS', 'SANTOS', 'ADORADORES'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true,
+ });

@@ -220,6 +220,7 @@ header {
     width: 100px;
     display: none;
 
+
 }
 
 .titlename {
@@ -253,17 +254,19 @@ header {
     }
 
     .title h1 {
-        font-size: 60px;
+        font-size: 40px;
         margin-left: 10px;
     }
 
     .title p {
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 15px;   
     }
 
     .titlename {
         align-items: normal;
+        justify-content: center;
+        
     }
 
 }
@@ -426,15 +429,13 @@ header {
 .missiontopic2 {
     display: flex;
     justify-content: right;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 .missiontopic2 p {
     background: #004f45;
     text-align: right;
 }
 .values {
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,5 +446,61 @@ header {
     color: white;
     font-family: var(--title-font-family);
     border-bottom: 4px solid orange;
-    margin: 30px 0;
+    margin-bottom: 60px;
+}
+
+.valueswritten {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.valuestopics {
+    position: absolute;
+}
+
+.valuestopics h2 {
+    color: #004f45;
+    background: #fff;
+    border-radius: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.valuestopics h2 span {
+    color: orange;
+}
+.valuesphoto {
+    width: 300px;
+    height: 400px;
+    left: 10%;
+    display: flex;
+    position: absolute;
+    z-index: 0;
+}
+.valuesphoto span {
+    width: 200px;
+    height: 400px;
+    background: url(./assets/hands2.jpeg) center/cover;
+    border-radius: 40px;
+}
+
+.lidership {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lidership h1 {
+    color: white;
+    font-family: var(--title-font-family);
+    border-bottom: 4px solid orange;
+    margin-bottom: 60px;
 }
