@@ -330,7 +330,7 @@ header {
     color: var(--colo2);
     font-family: var(--title-font-family);
     border-bottom: 4px solid var(--color3);
-    padding: 30px 0;
+    margin: 30px 0;
 }
 
 .vision h3 {
