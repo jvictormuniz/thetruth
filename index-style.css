@@ -8,11 +8,14 @@
 
 :root {
     --title-font-family: 'Fjallas', sans-serif;
-    --color-: #;
+    --color1: #fff;
+    --color2: black;
+    --color3: #004f45;
+    --color4: #2c555f;
 }
 
 body {
-    background-color: #004f45;
+    background-color: var(--color1);
 }
 
 li {
@@ -76,7 +79,7 @@ header {
 }
 
 .nav-bar .action_btn {
-    background-color:#2c555f;
+    background-color: var(--color3);
     color: #fff;
     padding: 8px 30px;
     border: none;
@@ -219,8 +222,6 @@ header {
 .logo2 img{
     width: 100px;
     display: none;
-
-
 }
 
 .titlename {
@@ -236,7 +237,7 @@ header {
 }
 
 .titlename p {
-    color: #2c555f;
+    color: var(--color3);
     font-weight: 700;
 }
 
@@ -326,15 +327,16 @@ header {
 }
 
 .vision h1 {
-    color: white;
+    color: var(--colo2);
     font-family: var(--title-font-family);
-    border-bottom: 4px solid orange;
-    margin: 30px 0;
+    border-bottom: 4px solid var(--color3);
+    padding: 30px 0;
 }
 
 .vision h3 {
-    color: white;
+    color: var(--color3);
     text-align: center;
+    font-weight: 700;
     padding: 10px;
     margin-bottom: 40px;
 }
@@ -345,9 +347,13 @@ header {
     font-size: 25px;
 }
 
+.visiontopics{
+    background-image: linear-gradient(var(--color1), var(--color3));
+}
+
 #visiontopic1 {
     left: 0; right: 0;
-    background: #fff;
+    background: var(--color3);
     margin: 20px;
     border-radius: 50px;
     display: flex;
@@ -356,7 +362,7 @@ header {
 }
 
 #visiontopic1 p {
-    color: #2c555f;
+    color: var(--color1);
     padding: 40px 0;
     margin-left: 20px;
     text-align: left;
@@ -365,7 +371,7 @@ header {
 
 #visiontopic2 {
     left: 0; right: 0; top: 1170px;
-    background: orange;
+    background: var(--color1);
     margin: 20px;
     border-radius: 50px;
     display: flex;
@@ -374,7 +380,7 @@ header {
 }
 
 #visiontopic2 p {
-    color: #fff;
+    color: var(--color3);
     padding: 40px 0;
     margin-right: 20px;
     text-align: right;
@@ -382,7 +388,8 @@ header {
 }
 
 .mission {
-    margin-top: 30px;
+    background: var(--color3);
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -390,14 +397,14 @@ header {
 } 
 
 .mission h1 {
-    color: white;
+    color: var(--color1);
     font-family: var(--title-font-family);
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid var(--color4);
     margin: 30px 0;
 }
 
 .mission h3 {
-    color: white;
+    color: var(--color1);
     text-align: center;
     padding: 10px;
     margin-bottom: 40px;
@@ -420,7 +427,9 @@ header {
 
 .topics p {
     width: 50%;
-    background-color: orange;
+    color: var(--color3);
+    font-weight: 700;
+    background-color: var(--color1);
     margin: 30px 20px;
     padding: 20px;
     border-radius: 20px;
@@ -431,40 +440,43 @@ header {
     justify-content: right;
 }
 .missiontopic2 p {
-    background: #004f45;
+    color: var(--color1);
+    background: var(--color3);
     text-align: right;
 }
 .values {
-    margin-top: 60px;
+    padding-top: 60px;
     display: flex;
+    background: var(--color3);
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .values h1 {
-    color: white;
+    color: var(--color1);
     font-family: var(--title-font-family);
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid var(--color4);
     margin-bottom: 60px;
 }
 
 .valueswritten {
     width: 100%;
-    height: 400px;
+    height: 500px;
+    background-image: linear-gradient(var(--color3), var(--color1));
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.valuestopics {
+#valuestopics {
     position: absolute;
 }
 
-.valuestopics h2 {
-    color: #004f45;
-    background: #fff;
+#valuestopics h2 {
+    color: var(--color3);
+    background: var(--color1);
     border-radius: 30px;
     margin-left: 30px;
     padding: 10px;
@@ -472,10 +484,11 @@ header {
     text-align: left;
 }
 
-.valuestopics h2 span {
-    color: orange;
+#valuestopics h2 span {
+    color: var(--color3);
 }
-.valuesphoto {
+
+#valuesphoto {
     width: 300px;
     height: 400px;
     left: 10%;
@@ -483,9 +496,11 @@ header {
     position: absolute;
     z-index: 0;
 }
-.valuesphoto span {
+
+#valuesphoto span {
     width: 200px;
     height: 400px;
+    border: 2px solid var(--color1);
     background: url(./assets/hands2.jpeg) center/cover;
     border-radius: 40px;
 }
@@ -499,8 +514,8 @@ header {
 }
 
 .lidership h1 {
-    color: white;
+    color: var(--color3);
     font-family: var(--title-font-family);
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid var(--color4);
     margin-bottom: 60px;
 }
