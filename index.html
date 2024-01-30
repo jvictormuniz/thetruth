@@ -15,134 +15,75 @@
             <div class="dropdown_menu">
                     <li><a href="">Home</a></li>
                     <li><a href="">Atuações</a></li>
-                    <li><a href="">Contato</a></li> 
+                    <li><a href="">Contato</a></li>
+                    <li class="action_btn2"><a href="">Participe!</a></li> 
             </div>
              
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
-
+            <div style="display: flex;align-items: center">
+                <a href="" class="action_btn">Participe!</a>
             <ul class="links">
                 <li><a href="">Home</a></li>
                 <li><a href="">Atuações</a></li>
                 <li><a href="">Contato</a></li>
             </ul>
-
+            </div>
+            
             <div class="logo"><a href=""><img src="./assets/IMG_0517.png" alt="Logo do The Truth."></a></div>
             
-            <a href="" class="action_btn">Participe!</a>
-
         </div>
     </header>
 
     <main>
         <div class="title">
-            <div class="logo2"><img src="./assets/IMG_0517.png" alt=""></div>
-            <div class="titlename">
                 <h1 class="hidden">THE TRUTH</h1>
                 <p class="hidden">WE ARE THE REVIVAL</p>
-            </div>
-            
         </div>
 
-        <section class="galery">
-            <div class="photos">
-                <div class="photo1"></div>  
-                <div class="photo2"></div>
-                <div class="photo3"></div>
-                <div class="photo4"></div>
-                <div class="photo1"></div> 
+        <section class="scroll">
+            <div class="container" style="display: flex; width: 200%">
+                <div class="panel vision_box1">
+                    <h1 class="hidden3">Visão!</h1>
+                </div>
+
+                <section class="panel vision_box2">
+                    <h3 class="hidden2">Ser referêncial primeiramente em Campina Grande, nos estados brasileiros 
+                        e nas nações. Alcançando pessoas através de projetos sociais e movimentos.</h3>
+                </section>
             </div>
         </section>
-
-        <div class="vision">
-            <h1>VISÃO</h1>
-            <h3>Ser referêncial primeiramente em Campina Grande, nos estados brasileiros 
-                e nas nações. Alcançando pessoas através de projetos sociais e movimentos.</h3>
-            
-            <div class="visiontopics">
-                <div id="visiontopic1" class="hidden2">
-                    <p>1. Crescer em reputação e dignidade diante dos homens para alcançar e discipular 
-                        mais pessoas.</p>
-                </div>
-                <div id="visiontopic2" class="hidden">
-                    <p>2. Estabelecer líderes para estarem a frente, alcançando pessoas e discipula-las.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mission">
-            <h1>MISSÃO</h1>
-            <h3>Com verdade e convicção alcançar pessoas e discipular para amarem
-                o Senhor e desfazerem as obras do diabo.
-            </h3>
-            <div class="missiontopic">
-                <div class="topics">
-                    <div class="missiontopic1">
-                        <p class="hidden2">1. Não ser falso ou sem fundamento mas um avivamento genuíno e permanente.</p>
-                    </div>
-                    <div class="missiontopic2">
-                        <p class="hidden">2. Desenvolver um caráter genuíno a partir de oração e jejum, comunhão e ensino.</p>
-                    </div>
-                    <div class="missiontopic3">
-                        <p class="hidden2">3. Não se acomodar com a salvação, mas promover a salvação e a mudança de vida para outras pessoas.</p>
-                    </div>
-                </div>
-            </div>         
-        </div>
-
-        <div class="values">
-            <h1>VALORES</h1>
-            <div class="valueswritten">
-                <div id="valuesphoto" class="hidden">
-                    <span></span>
-                </div>
-                <div id="valuestopics" class="hidden">
-                    <h2>SOMOS <br><span class="js-words"></span></h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="lidership">
-            <h1>LÍDERES</h1>
-            <div class="lucasyohanan">
-                <span></span>
-                <div id="lucas-info">
-                        <h2>LUCAS YOHANAN</h2>
-                        <p></p>
-                </div>
-            </div>
-            <div class="ezequielneto">
-                <div id="ezequiel-info">
-                        <h2>EZEQUIEL NETO</h2>
-                        <p></p>
-                </div>
-                <span></span>
-            </div>
-        </div>
         
+        <section class="scroll2">
+            <div class="container2" style="display: flex; width: 200%">
+                <div class=" panel2 vision_box3">
+                    <p class="ballom1">1. Crescer em reputação e dignidade diante dos homens
+                        para alcançar e discipular mais pessoas.</p>
+                    <p class="ballom2">2. Estabeleccer líderes para estarem a frente, alcançar
+                        pessoas e discipilá-las.</p>
+                </div>
+
+                <section class=" panel2 vision_box3">
+                    <p class="ballom1">1. Crescer em reputação e dignidade diante dos homens
+                        para alcançar e discipular mais pessoas.</p>
+                    <p class="ballom2">2. Estabeleccer líderes para estarem a frente, alcançar
+                        pessoas e discipilá-las.</p>
+                </section>
+            </div>
+        </section>
     </main>
 </body>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-<script>
-    const toggleBtn = document.querySelector('.toggle_btn')
-    const toggleBtnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
-
-    toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
-
-        toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-    }
-</script>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500&family=Montserrat:wght@500;600&family=Noto+Sans:wght@400;600&family=Poppins:wght@300;600&display=swap');
 </style>
 
+<script src="./script/ScrollTrigger.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
 <script src="./index-script.js"></script>
+<script src="./gsap.js"></script>
 </html>
